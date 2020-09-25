@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>solar.lowtechmagazine.com</title>
+    <meta charset="utf-8">
+    <style>
+
+      body {  font-family: serif; }
+      h1, h2, h3 {
+        font-weight: normal;
+      }
+      #low-tech-magazine{
+        font-weight: normal;
+      }
+
+      #low-tech-solutions{
+        color:#162dab;
+      }
+      #obsolete-technology{
+        color:#006951
+      }
+      #high-tech-problems{
+        color:#d11305
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-content{
+        background-color: #fff5d1;
+      }
+      .mix {
+        background-blend-mode: hard-light;
+        color:#fff5d1;
+        background-size: 110%;
+        background-color: #162dab;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: bottom, middle
+
+# How to build a sustainable website?
+
+Workshop by LOW←TECH MAGAZINE for [Ethics by Design 2020](https://2020.ethicsbydesign.fr/)
+
+???
+
+Roel, artist and researcher
+net culture, infrastructure and DIY
+from Rotterdam, PZI
+now PhD.
+
+---
+
+# Your menu for today
+
+1. ## What is LTM?
+2. ## What is Low-Tech?
+3. ## Why Low-Tech Web Design?
+4. ## solar.lowtechmagazine.com
+
+???
+
+give you some inspiration and conceptual tools for your design work
+
+---
+
+# What is LTM?
+
+???
+
+So first, what is low-tech magazine?
+
+--
+
+## “ Doubts on progress and technology ”
+
+???
+
+ LTM is an on-line journal that casts doubts on progress and technology since 2007. The magazine was founded **Kris de Decker** who remains the main author. 
+
+--
+
+## Obsolete Technology
+
+???
+
+The magazine studies historical and obsolete technologies
+
+--
+
+## High-Tech Problems
+
+???
+
+together with research into the social and environmental problems that result from the use of high technology
+
+--
+
+## Low-Tech Solutions
+
+???
+
+and combines techniques of yesterday with knowledge of today to create low tech solutions.
+
+--
+
+## 12 articles, 900,000 unique visitors per year
+
+???
+
+
+the magazine releases 12 long, well researched and richly illustrated **articles** each year 
+
+over the course of the years has received a **steady following**.
+
+which contribute to the community through lengthy and insightful commentary.
+
+
+---
+class: mix, left, bottom
+background-image: url(electric-velomobile-3.png)
+
+#transportation
+
+---
+class: mix, left, bottom
+background-image: url(albert-anker-tile-stove.png)
+background-color: #006951
+
+#heating & cooling
+
+---
+class: mix, left, bottom
+background-image: url(solar-PV.png)
+background-color: #d11305
+
+#renewable energy
+
+---
+class: mix, right, bottom
+background-image: url(chinese-greenhouse.png)
+
+#buildings
+
+---
+class: mix, right, bottom
+background-image: url(sps_close.png)
+background-color: #006951
+
+#ICT
+
+---
+
+background-image: url(ltm.png)
+class: left, bottom
+
+#2007
+
+???
+
+The website was launched in 2007
+---
+
+background-image: url(ltm.png)
+class: left, bottom
+
+#2019
+
+???
+
+And saw little change so far
+
+is in desparate need of a redesign
+
+for one it is completely unfit for mobile phones
+
+
+---
+
+class: center, middle
+#“ If you are so low-tech then why do you have a website? ”
+
+???
+
+but people kept asking a question that was in need of a serious answer
+
+at the heart of this question are some assumptions about what low tech is and isn't
+
+
+---
+
+class: left, top
+
+# What is Low-Tech?
+
+--
+
+## technique > technology
+
+???
+
+low tech is about considering technique over technology
+
+technique is about how things are used, embedded or contextualized
+
+--
+
+### energy impact
+
+???
+
+low tech considers energy impact
+
+--
+
+### built-in assumptions
+
+???
+
+but also the built in assumptions about use, reparability, maintenance etc
+
+--
+
+### dependencies
+
+???
+
+and it considers the dependencies of technologies, favoring less complex or less problematic dependency chains
+
+---
+# Useful concepts:
+
+## Affordances
+## Externalities
+## Rebound effects
+
+???
+
+i want to quickly dive into three concepts that are helpful when thinking about how to take a low-tech approach
+
+---
+
+# Affordances
+
+--
+
+## “ **the range of functions and constraints that an object provides for, and places upon**, structurally situated subjects ”
+
+Davis, Jenny L., and James B. Chouinard. 2016. “Theorizing Affordances: From Request to Refuse.” Bulletin of Science, Technology & Society 36(4): 241–48.
+
+???
+
+translate from academic to plain english
+
+steering, not deterministic
+
+guns kill people, toaster doesn't 
+
+working with affordance is your one of your tools as a designer
+
+---
+# Affordances
+
+## “ the range of functions and constraints that an object provides for, and places upon, **structurally situated subjects** ”
+
+Davis, Jenny L., and James B. Chouinard. 2016. “Theorizing Affordances: From Request to Refuse.” Bulletin of Science, Technology & Society 36(4): 241–48.
+
+???
+
+car can go fast or slow, 
+
+your choice but nice sounds, looks, 
+
+the rules allow you to go 130
+
+the road is nice and straight
+
+free choice but influenced by culture, structures, laws that have influence on your choice
+
+---
+# (Negative) Externalities
+
+--
+##the manufacture and use of things has (negative) impacts on others, who have not chosen to use the product but who end up bearing the costs. For example the environment.
+
+Goodstein, Eban S. 2012. Economics and the Environment. Wiley.
+
+???
+
+economics, costs or benefits not taking into account of pricing. 
+
+car example, pollution, increased stress of other drivers, increased stress for road
+
+none of this is in the price of the car.
+
+---
+
+# Rebound effects
+
+--
+
+## If something becomes more energy efficient and thus cheaper, we can use more of it!
+
+Herring, Horace, and Robin Roy. 2007. “Technological Innovation, Energy Efficient Design and the Rebound Effect.” Technovation 27(4): 194–203.
+
+???
+
+environmental economics 
+
+fuel efficiency leads to more driving
+
+jevon's paradox
+
+imagine using efficiency gains not to produce more but to reduce negative externalities
+
+---
+
+
+# Why Low-Tech Web Design?
+
+???
+
+immaterial internet
+
+growing energy use
+
+material basis of datacenters transport and computers. 
+
+renewables can but not enough
+
+energy use of internet grows faster
+
+
+
+
+
+---
+
+background-image: url(datagrowth.png)
+
+???
+
+x3 and x10 on mobile
+
+more data means more energy use in transport
+
+but also means stronger and newer computers
+
+---
+
+# Why Low-Tech Web Design?
+
+## Growth of data usage
+* ### More transport
+* ### Need for faster computers
+
+---
+# Why Low-Tech Web Design?
+
+## Growth of data usage
+* ### More transport
+* ### Need for faster computers
+
+
+# Always on-line
+
+???
+
+used to be desktop in office, library home
+
+now even on-line when you sleep
+
+--
+
+* ### Cloud computing
+
+???
+
+what you used to do off-line now happens on-line
+
+writing documents, listening to music etc
+--
+
+* ### More computing
+
+???
+multiple devices, internet of things etc
+
+**conclusion** less data, less on-line
+
+---
+
+# solar.lowtechmagazine.com
+
+???
+
+address footprint and on-line time
+
+reverse trend
+
+show how different choices can be made
+
+port existing website
+
+research in public, in the open
+
+--
+
+## run on off-grid solar
+
+???
+
+small off-grid system of the office
+
+practice what you preach
+
+--
+
+## on a low-power machine
+
+???
+
+to use the small offgrid solar
+
+--
+
+## light data foot print
+
+???
+
+serve same amount of visitors
+
+--
+
+## support old computers
+--
+
+## and slow networks
+
+---
+
+# Let's have a look
+
+# <https://solar.lowtechmagazine.com>
+
+???
+
+communicate materiality
+
+static site 
+
+stick to what HTML does well 
+
+dithered images → compression but also visual uniformity
+
+default typeface
+
+textual logo
+
+no tracking or advertising
+
+design for off-line reading
+
+---
+
+class: mix, left, bottom
+background-image: url(lowtech-book.png)
+
+#Off-line reading 
+
+
+
+---
+# What can you do for your next design?
+
+--
+
+## yes: light design, support old and different machines
+
+???
+
+by macbook for macbook
+light is always better, will load faster better experience
+
+--
+
+## no: off-grid solar, dithering
+
+???
+
+many examples where inspired
+
+huge solar arrays, uptime
+
+dithering becomes an aesthetic, we used it for a specific case
+
+--
+
+## consider: self-hosting, static site engine
+
+???
+
+host it at a reputable green hosting provider or do it yourself
+
+static site is less maintenance, can leave it up,
+accessibility etc
+
+---
+
+# Thanks,
+
+### from solar.lowtechmagazine.com team
+
+### Kris de Decker + Marie Otsuka + Roel Roscam Abbing + Lauren Traugott Campbell 
+
+## Get in touch!
+
+### rra@post.lurk.org -> Mastodon
+### roelof.info -> web
+### @rscmbbng -> Twitter
+
+
+
+
+
+    </textarea>
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        ratio: "16:9"
+      });
+    </script>
+  </body>
+</html>
