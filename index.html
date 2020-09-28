@@ -78,16 +78,47 @@ LTM team consists of us, Kris de Decker, Lauren Traugott-Campbell, and Kathy Van
 
 ---
 
-Part 1: About the project
+# Overview of workshop
 
-## Overview: What is LOW←TECH MAGAZINE? *10min*
-## Strategies: How is LOW←TECH MAGAZINE designed? *30min*
+???
 
-Part 2: Workshop
+Workshop divided in two parts, background of our project
+and how you can use this knowledge in yours
+
+--
+### First part: What is LOW←TECH MAGAZINE? *10min*
+
+--
+### & how did solar.lowtechmagazine.com come about? 
+
+--
+* ### hard limits (*15min*)
+
+--
+* ### design responses (*15min*)
+
+---
+
+# Overview of workshop
+
+--
+
+### Second part, how to do design from sobriety?
+
+--
 
 ## Audit: How sustainable are these websites? *15min*
+
+--
+
 ## Brainstorm: What can we observe about various websites? *20min*
+
+--
+
 ## Share: How might we make these websites more sustainable? *20min*
+
+--
+
 ## Wrap Up: Questions? *5min*
 
 ???
@@ -375,97 +406,139 @@ multiple devices, internet of things etc
 ---
 
 class: section
-# Strategies:<br>How is LOW←TECH MAGAZINE designed?
+# How did solar.lowtechmagazine.com come about?
 
 ---
 
-# What is a sustainable website?
-
----
-class: center, middle
-
-# No website
+# Thinking with *hard limits*
 
 ???
-**R**
 
-- the most sustainable is to have no website at all
+*R* LTM is a public research project
+do what you preach
 
 ---
-class: bottom
-background-image: url(img/www.png)
-# The original website
 
+# Thinking with *hard limits*
+
+.center[![](img/solar-panel-solar-powered-server-2.png)
+
+Use the pre-existing off-grid solar of LTM office]
 
 ???
-**R**
-- in the same way that Kris de Decker looks to technologies of the past, we looked at historical examples of websites for inspiration
+
+Experiment to see if it can be done.
 
 ---
-# The case of solar.lowtechmagazine.com
 
-## Approach informs the aesthetic, not vice-versa
-## Determine the compromises: minimize footprint while designing engaging content
+# Thinking with *hard limits*
+
+## How off-grid solar?
 
 ???
-**R**
-- it is not an aesthetic or a stylesheet but an approach
-- website as a document rather than an app
 
----
-class: section
-# Hardware strategies
+How to provision for off-grid solar?
 
-???
-**R**
+--
 
----
-# XXX
+#### Don't scale energy infra up, scale energy requirements down
 
 ???
-**R**
 
-have a 1w SBC. Not applicable to others. But the hard constraint can also be made. Webhosting and web apps are about virtualization. There is not material. 
-anti-cloud anti-scaling
+Webhosting and web apps are about virtualization and scaling. There is no material. We need to do the opposite.
 
----
-background-image: url(img/solar-panel-solar-powered-server-2.png)
+--
 
-# Off-grid system
+## Challenge the sanctity of 'uptime'
 
-## Solar-powered server
-## Barcelona, Spain
+--
+
+#### What if instead of 99.99999% ('5 nines uptime') we do 90%?
 
 ???
-**R**
+*R* With uptime comes redundancy. 
+
+The exponential increase in resources needed to add another nine
+
+This is anti-cloud and anti-scaling
+
+Design can solve this much more elegantly than engineering
+
+Our uptime was 98%
 
 ---
-background-image: url(img/new-solar-charge-controller.png)
 
-# Low-power machine
+# Thinking with *hard limits*
 
-## Goal: 90% uptime, not 100%
+.center[![](img/new-solar-charge-controller.png)
 
----
-# Expected Uptime
-
-## XXX
+use extremely low-powered computer, max 1.3 W/h
+]
 
 ???
-**R**
 
+*R* low-powered computer also necessary
 
 ---
-# Static Website
 
-## Markdown format stores content as portable archive
-## Various static site generators are available
+# Thinking with *hard limits*
+
+.center[![](img/new-solar-charge-controller.png)
+
+your phone is faster (and uses more energy)]
+
+---
+
+# Thinking with *hard limits*
+
+.center[![](img/new-solar-charge-controller.png)
+
+your last phone is also faster (and uses more energy)]
 
 ???
-**R**
-We chose Pelican because:
-- working with existing data
-- python based
+
+audience cracks up or stays silent as they repulse in disgust at this sad joke
+
+---
+
+# Thinking with *hard limits*
+
+--
+
+## The site is too popular to use normal CMS on this machine
+
+???
+
+the hard limit on energy shifted our entire design
+
+--
+
+#### What if we don't use modern web methods, but look at the past for inspiration?
+
+???
+
+dynamic site vs static site
+
+--
+
+## Website as documents rather than an app
+
+???
+
+generate the site in one go, rather than on every request
+
+much easier to host, less risk of hacking, out of date versions
+
+--
+
+####  extremely fast, low-energy, works on old devices 
+
+???
+
+we get all these gifts for free as well
+
+markdown means portable archive
+we use Pelican because python then I could write extensions
 
 ---
 class: section
@@ -664,34 +737,58 @@ class: center, middle
 ---
 class: section
 
-# Audit: How sustainable are these websites?
+# How to design for sobriety?
 
 ???
-**R**
 
+theme of this workshop, to have that discussion
 
 ---
-# Case 1: 
 
+class: section
+
+# How to design for (data&energy) sobriety?
+
+???
+
+
+**R** This should be about that, not aesthetics. Please be be creative. 
+
+Gonna show to websites and how to consider how they are designed.
+
+---
+
+class: middle, center
+
+#A tour of what to look for and what to consider.
+
+---
+
+class: middle, center
+
+# <https://lowimpact.organicbasics.com>
 
 ???
 **R**
 
+- not to be moralistic, but to see what could work?
 - Beware of greenwashing
+- The idea is nice, but there is a logical fallacy of green energy, offsets etc. 
+- In the end it comes down to how much bits do you push, how much calculations are made. 
 
 ---
-# Case 2: 
+class: middle, center
+
+# <https://varia.zone>
 
 ???
-**R**
 
+**R** s
+static site is not everything
 
----
-# Questions to consider
-class: 
+was one of my learning grounds
 
-???
-**R**
+but how people USE a technology is also important to consider
 
 ---
 class: middle, center
